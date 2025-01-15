@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { PopupEpisodes } from './PopupEpisodes';
 import { PopupHeader } from './PopupHeader';
 import { PopupInfo } from './PopupInfo';
@@ -65,7 +65,7 @@ const PopupContainer = styled.div`
 
   ${({ visible }) =>
     visible &&
-    `
+    css`
       opacity: 1;
       visibility: initial;
       pointer-events: all;

@@ -26,9 +26,9 @@ export function ItemsGrid() {
 
   return (
     <Container>
-      {characters.map((props) => (
+      {characters.map((props, index) => (
         <Card
-          key={props.id}
+          key={index}
           onClickHandler={() => cardOnClickHandler(props)}
           {...props}
         />

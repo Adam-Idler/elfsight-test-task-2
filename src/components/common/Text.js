@@ -4,6 +4,7 @@ export function Text({
   className,
   children,
   style,
+  lineHeight,
   color = '#ccc',
   fontSize = '16px'
 }) {
