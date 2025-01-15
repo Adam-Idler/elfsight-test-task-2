@@ -1,2 +1,2 @@
-export * from './Loader';
-export * from './Text';
+export { Loader } from './Loader';
+export { Text } from './Text';
