@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Popup } from './popup';
 import { useData } from './providers';
-import { Card } from './card';
+import { Card } from './Card';
 
 const defaultPopupSettings = {
   visible: false,
