@@ -23,8 +23,6 @@ const PopupStatus = styled(CardStatus)`
   font-size: 20px;
   justify-content: center;
 
-  font-size: 16px;
-
   & p {
     text-align: center;
     margin-top: 10px;

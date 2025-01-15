@@ -26,7 +26,7 @@ export function Card({
   );
 }
 
-export function CardTitle({ name, gender }) {
+export function CardTitle({ name, gender, className }) {
   const Icon = (() => {
     if (gender === 'Male') {
       return <Male width={20} height={20} fill="#33b3c8" title="Male" />;
@@ -46,7 +46,7 @@ export function CardTitle({ name, gender }) {
   })();
 
   return (
-    <CardTitleContainer className="card-title-container">
+    <CardTitleContainer className={className}>
       <StyledCardTitle className="card-title">{name}</StyledCardTitle>
 
       <IconContainer>{Icon}</IconContainer>
