@@ -7,7 +7,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "deploy": "gh-pages -d build",
-    "format": "npx prettier --write \"src/**/*.js\""
+    "lint": "eslint --fix --ext .js,.jsx . && npx prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "axios": "^0.27.2",

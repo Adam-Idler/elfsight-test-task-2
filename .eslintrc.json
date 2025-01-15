@@ -4,6 +4,9 @@
     "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
+  "rules": {
+    "import/no-unused-modules": [1, { "unusedExports": true }]
+  },
   "settings": {
     "react": {
       "versions": "detect"
