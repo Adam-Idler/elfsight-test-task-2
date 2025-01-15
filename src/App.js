@@ -30,7 +30,15 @@ const Main = styled.main`
   max-width: 80%;
   margin: 0 auto;
 
-  ${window.screen.width < 1200 && 'max-width: 95%'};
-  ${window.screen.width < 930 && 'max-width: 85%'};
-  ${window.screen.width < 600 && 'max-width: 90%'};
+  @media (max-width: 1200px) {
+    max-width: 95%;
+  }
+
+  @media (max-width: 930px) {
+    max-width: 85%;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 90%;
+  }
 `;

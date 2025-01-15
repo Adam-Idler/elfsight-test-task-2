@@ -9,5 +9,7 @@ const StyledLogo = styled.img`
   max-width: 300px;
   user-select: none;
 
-  ${window.screen.width < 930 && 'margin-bottom: 20px'};
+  @media (max-width: 930px) {
+    margin-bottom: 20px;
+  }
 `;

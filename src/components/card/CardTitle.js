@@ -23,6 +23,11 @@ const StyledCardTitle = styled.h2`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: ${window.screen.width < 450 ? '130px' : '100%'};
-  font-size: ${window.screen.width < 450 ? '18px' : '24px'};
+  max-width: 100%;
+  font-size: 24px;
+
+  @media (max-width: 450px) {
+    max-width: 130px;
+    font-size: 18px;
+  }
 `;
