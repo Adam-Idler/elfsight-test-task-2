@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Popup } from './popup';
 import { useData } from './providers';
-import { Card } from './card';
+import { Card } from './Card';
 
 const defaultPopupSettings = {
   visible: false,
@@ -26,9 +26,9 @@ export function ItemsGrid() {
 
   return (
     <Container>
-      {characters.map((props) => (
+      {characters.map((props, index) => (
         <Card
-          key={props.id}
+          key={index}
           onClickHandler={() => cardOnClickHandler(props)}
           {...props}
         />

@@ -40,11 +40,12 @@ export function DataProvider({ children }) {
       apiURL,
       setApiURL,
       characters,
+      fetchData,
       isFetching,
       isError,
       info
     }),
-    [activePage, apiURL, characters, isFetching, isError, info]
+    [activePage, apiURL, characters, isFetching, isError, info, fetchData]
   );
 
   return (
